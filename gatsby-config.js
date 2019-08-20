@@ -27,6 +27,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      options: {
+        alwaysCheck: false,
+        codegen: true,
+        codegenDelay: 250,
+        fileName: "./graphql-types.ts",
+        tsLoader: {
+          logLevel: "warn",
+        },
+      },
+      resolve: `gatsby-plugin-ts`,
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
